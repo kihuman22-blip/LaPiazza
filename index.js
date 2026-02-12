@@ -389,4 +389,12 @@
   // Display the initial scene.
   switchScene(scenes[0]);
 
+  // Nach 10 Sekunden automatisch in den nächsten Raum springen
+setTimeout(function() {
+  var nextScene = scenes[1]; // Springt zum zweiten Raum in deiner Liste
+  if(nextScene) {
+    switchScene(nextScene);
+  }
+}, 10000); // 10000 Millisekunden = 10 Sekunden
+
 })();
