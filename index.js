@@ -389,12 +389,41 @@
   // Display the initial scene.
   switchScene(scenes[0]);
 
-  // Nach 10 Sekunden automatisch in den nächsten Raum springen
-setTimeout(function() {
-  var nextScene = scenes[1]; // Springt zum zweiten Raum in deiner Liste
-  if(nextScene) {
-    switchScene(nextScene);
-  }
-}, 6000); // 10000 Millisekunden = 10 Sekunden
+ // --- Automatischer Szenen-Wechsler Start ---
+var sceneTimeout;
+var currentSceneIndex = 0;
+
+function startSceneTimer() {
+  // Timer löschen, falls einer läuft
+  clearTimeout(sceneTimeout);
+  
+  // Neuen Timer auf 6 Sekunden setzen
+  sceneTimeout = setTimeout(function() {
+    // Index für die nächste Szene berechnen
+    currentSceneIndex = (currentSceneIndex + 1) % scenes.length;
+    
+    // Zur nächsten Szene wechseln
+    switchScene(scenes[currentSceneIndex]);
+    
+    // Timer für die neue Szene wieder starten
+    startSceneTimer();
+  }, 6000); // 6000ms = 6 Sekunden
+}
+
+// Timer stoppen, wenn der Nutzer interagiert
+function stopSceneTimer() {
+  clearTimeout(sceneTimeout);
+  // Nach der Interaktion den Timer nach 6 Sekunden Inaktivität wieder starten
+  startSceneTimer();
+}
+
+// Ereignisse registrieren, die den Timer bei Bewegung stoppen/neustarten
+panoElement.addEventListener('mousedown', stopSceneTimer);
+panoElement.addEventListener('touchstart', stopSceneTimer);
+panoElement.addEventListener('wheel', stopSceneTimer);
+
+// Den Durchlauf zum ersten Mal starten
+startSceneTimer();
+// --- Automatischer Szenen-Wechsler Ende ---
 
 })();
