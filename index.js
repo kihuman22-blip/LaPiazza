@@ -395,6 +395,6 @@ setTimeout(function() {
   if(nextScene) {
     switchScene(nextScene);
   }
-}, 10000); // 10000 Millisekunden = 10 Sekunden
+}, 6000); // 10000 Millisekunden = 10 Sekunden
 
 })();
