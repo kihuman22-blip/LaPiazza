@@ -109,7 +109,7 @@
 
   // Set up autorotate, if enabled.
   var autorotate = Marzipano.autorotate({
-    yawSpeed: 0.06,
+    yawSpeed: 0.03,
     targetPitch: 0,
     targetFov: Math.PI/2
   });
@@ -389,7 +389,7 @@
   // Display the initial scene.
   switchScene(scenes[0]);
 
- // --- Verbesserter Szenen-Wechsler (9 Sekunden) Start ---
+  // --- Verbesserter Szenen-Wechsler (9 Sekunden) Start ---
 var sceneTimeout;
 
 function startSceneTimer() {
@@ -429,4 +429,5 @@ panoElement.addEventListener('wheel', resetTimer);
 // Initialer Start
 startSceneTimer();
 // --- Verbesserter Szenen-Wechsler Ende ---
+
 })();
