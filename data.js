@@ -24,14 +24,14 @@ var APP_DATA = {
       ],
       "faceSize": 1488,
       "initialViewParameters": {
-        "yaw": -0.2786003440137623,
         "pitch": 0,
-        "fov": 1.3116418928398474
+        "yaw": 0,
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": -0.08236371352235139,
-          "pitch": 0.5376095640675018,
+          "yaw": -0.15809692815192555,
+          "pitch": 0.5451430317868429,
           "rotation": 0,
           "target": "1-tr"
         }
@@ -62,28 +62,28 @@ var APP_DATA = {
       ],
       "faceSize": 1488,
       "initialViewParameters": {
-        "yaw": -1.6557761179692214,
         "pitch": 0,
-        "fov": 1.3116418928398474
+        "yaw": 0,
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 0.48912921924036823,
-          "pitch": 1.0875254259801181,
+          "yaw": 0.4672457318209613,
+          "pitch": 0.998431466991935,
           "rotation": 0,
           "target": "0-eingang"
         },
         {
-          "yaw": -1.2131244651927204,
-          "pitch": 0.5783160347149554,
+          "yaw": 2.6630176012107576,
+          "pitch": 0.674370254539097,
           "rotation": 0,
-          "target": "2-essraum1"
+          "target": "8-hinten"
         },
         {
-          "yaw": 2.6568534832306767,
-          "pitch": 0.6630414788238994,
+          "yaw": -1.2380101494648343,
+          "pitch": 0.49103702094075175,
           "rotation": 0,
-          "target": "8-hinteressraum"
+          "target": "2-essraum1"
         }
       ],
       "infoHotspots": []
@@ -112,20 +112,20 @@ var APP_DATA = {
       ],
       "faceSize": 1488,
       "initialViewParameters": {
-        "yaw": -2.828955833690273,
-        "pitch": 0.0515449430692243,
-        "fov": 1.3116418928398474
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 2.077510610185753,
-          "pitch": 0.488668555678224,
+          "yaw": 2.0369884228644555,
+          "pitch": 0.596400787695428,
           "rotation": 0,
           "target": "1-tr"
         },
         {
-          "yaw": -2.6065454309352756,
-          "pitch": 0.7691713861861853,
+          "yaw": -2.6285174712109995,
+          "pitch": 0.7843264756585313,
           "rotation": 0,
           "target": "3-essraum2"
         }
@@ -156,26 +156,26 @@ var APP_DATA = {
       ],
       "faceSize": 1488,
       "initialViewParameters": {
-        "yaw": -2.4512503396910468,
-        "pitch": 0.10562878010013854,
-        "fov": 1.3116418928398474
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": -0.11925716020762955,
-          "pitch": 0.6527314878231163,
+          "yaw": -0.05038513657997967,
+          "pitch": 0.6648160289611127,
           "rotation": 0,
           "target": "2-essraum1"
         },
         {
-          "yaw": -1.6967714526944615,
-          "pitch": 0.6804836063082735,
+          "yaw": -1.7019486711948062,
+          "pitch": 0.7456878193303034,
           "rotation": 0,
           "target": "4-essraum2rein"
         },
         {
-          "yaw": 2.9792402835016034,
-          "pitch": 0.6801695059699995,
+          "yaw": 2.9533777556732144,
+          "pitch": 0.7659957762785403,
           "rotation": 0,
           "target": "5-essraum3"
         }
@@ -206,14 +206,14 @@ var APP_DATA = {
       ],
       "faceSize": 1488,
       "initialViewParameters": {
-        "yaw": -1.0022192790062974,
-        "pitch": 0.13518019293184125,
-        "fov": 1.3116418928398474
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 0.13044444614099504,
-          "pitch": 0.7922929740511506,
+          "yaw": 0.09423437409936675,
+          "pitch": 0.642772907486135,
           "rotation": 0,
           "target": "3-essraum2"
         }
@@ -244,26 +244,26 @@ var APP_DATA = {
       ],
       "faceSize": 1488,
       "initialViewParameters": {
-        "yaw": -2.524747036498196,
-        "pitch": 0.10716955651762206,
-        "fov": 1.3116418928398474
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 0.9012047413332507,
-          "pitch": 0.665092658675837,
+          "yaw": 0.9181971608169786,
+          "pitch": 0.711610373677674,
           "rotation": 0,
           "target": "3-essraum2"
         },
         {
-          "yaw": -0.8526586378747183,
-          "pitch": 0.7069272782620502,
+          "yaw": -0.8479788835038526,
+          "pitch": 0.77062949335299,
           "rotation": 0,
           "target": "6-essraum3rein"
         },
         {
-          "yaw": -2.509818934848102,
-          "pitch": 0.6920590707494423,
+          "yaw": -2.501631413479819,
+          "pitch": 0.7246069403173898,
           "rotation": 0,
           "target": "7-essraumende"
         }
@@ -294,11 +294,18 @@ var APP_DATA = {
       ],
       "faceSize": 1488,
       "initialViewParameters": {
-        "yaw": 0.8894466380355599,
-        "pitch": 0.025983698462345828,
-        "fov": 1.3116418928398474
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
       },
-      "linkHotspots": [],
+      "linkHotspots": [
+        {
+          "yaw": 2.0016654218734917,
+          "pitch": 0.7541741951833423,
+          "rotation": 0,
+          "target": "5-essraum3"
+        }
+      ],
       "infoHotspots": []
     },
     {
@@ -325,14 +332,14 @@ var APP_DATA = {
       ],
       "faceSize": 1488,
       "initialViewParameters": {
-        "yaw": 0.6384198619237154,
-        "pitch": 0.027765655100022713,
-        "fov": 1.3116418928398474
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 1.8150675209857372,
-          "pitch": 0.6442556305882103,
+          "yaw": 1.8348511167822856,
+          "pitch": 0.7846484730380734,
           "rotation": 0,
           "target": "5-essraum3"
         }
@@ -340,8 +347,8 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "8-hinteressraum",
-      "name": "Hinteressraum",
+      "id": "8-hinten",
+      "name": "Hinten",
       "levels": [
         {
           "tileSize": 256,
@@ -363,29 +370,29 @@ var APP_DATA = {
       ],
       "faceSize": 1488,
       "initialViewParameters": {
-        "yaw": 0.6285470254767311,
-        "pitch": 0.06236527422145599,
-        "fov": 1.3116418928398474
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": -1.3049975891988836,
-          "pitch": 0.6749455397168695,
+          "yaw": -1.3151473811963257,
+          "pitch": 0.5552784509060196,
           "rotation": 0,
           "target": "1-tr"
         },
         {
-          "yaw": 1.1035168419189887,
-          "pitch": 0.7118245566468957,
+          "yaw": 1.1334392871355448,
+          "pitch": 0.6326549049731227,
           "rotation": 0,
-          "target": "9-hinteressraumecke"
+          "target": "9-hintenecke"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "9-hinteressraumecke",
-      "name": "HinteressraumEcke",
+      "id": "9-hintenecke",
+      "name": "HintenEcke",
       "levels": [
         {
           "tileSize": 256,
@@ -407,16 +414,16 @@ var APP_DATA = {
       ],
       "faceSize": 1488,
       "initialViewParameters": {
-        "yaw": 0.8565359654944462,
-        "pitch": -0.0014657819707633024,
-        "fov": 1.3116418928398474
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 1.101679478087565,
-          "pitch": 0.5762804876785985,
+          "yaw": 1.0915062854999604,
+          "pitch": 0.58968427243693,
           "rotation": 0,
-          "target": "8-hinteressraum"
+          "target": "8-hinten"
         }
       ],
       "infoHotspots": []
