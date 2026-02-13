@@ -109,7 +109,7 @@
 
   // Set up autorotate, if enabled.
   var autorotate = Marzipano.autorotate({
-    yawSpeed: 0.03,
+    yawSpeed: 0.06,
     targetPitch: 0,
     targetFov: Math.PI/2
   });
@@ -389,41 +389,44 @@
   // Display the initial scene.
   switchScene(scenes[0]);
 
- // --- Automatischer Szenen-Wechsler Start ---
+ // --- Verbesserter Szenen-Wechsler Start ---
 var sceneTimeout;
-var currentSceneIndex = 0;
 
 function startSceneTimer() {
-  // Timer löschen, falls einer läuft
   clearTimeout(sceneTimeout);
-  
-  // Neuen Timer auf 6 Sekunden setzen
   sceneTimeout = setTimeout(function() {
-    // Index für die nächste Szene berechnen
-    currentSceneIndex = (currentSceneIndex + 1) % scenes.length;
+    // Finde heraus, welche Szene gerade aktiv ist
+    var currentScene = viewer.scene();
+    var currentIndex = -1;
     
-    // Zur nächsten Szene wechseln
-    switchScene(scenes[currentSceneIndex]);
+    for (var i = 0; i < scenes.length; i++) {
+      if (scenes[i].scene === currentScene) {
+        currentIndex = i;
+        break;
+      }
+    }
+
+    // Berechne die nächste Szene (Endlosschleife)
+    var nextIndex = (currentIndex + 1) % scenes.length;
+    switchScene(scenes[nextIndex]);
     
-    // Timer für die neue Szene wieder starten
+    // Timer für die nächste Runde starten
     startSceneTimer();
-  }, 6000); // 6000ms = 6 Sekunden
+  }, 6000); 
 }
 
-// Timer stoppen, wenn der Nutzer interagiert
-function stopSceneTimer() {
+// Timer neu starten bei Interaktion
+function resetTimer() {
   clearTimeout(sceneTimeout);
-  // Nach der Interaktion den Timer nach 6 Sekunden Inaktivität wieder starten
   startSceneTimer();
 }
 
-// Ereignisse registrieren, die den Timer bei Bewegung stoppen/neustarten
-panoElement.addEventListener('mousedown', stopSceneTimer);
-panoElement.addEventListener('touchstart', stopSceneTimer);
-panoElement.addEventListener('wheel', stopSceneTimer);
+// Reagiert auf Maus, Touch und Scrollen
+panoElement.addEventListener('mousedown', resetTimer);
+panoElement.addEventListener('touchstart', resetTimer);
+panoElement.addEventListener('wheel', resetTimer);
 
-// Den Durchlauf zum ersten Mal starten
+// Initialer Start
 startSceneTimer();
-// --- Automatischer Szenen-Wechsler Ende ---
-
+// --- Verbesserter Szenen-Wechsler Ende ---
 })();
