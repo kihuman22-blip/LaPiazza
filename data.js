@@ -24,8 +24,8 @@ var APP_DATA = {
       ],
       "faceSize": 1488,
       "initialViewParameters": {
-        "yaw": -0.414851632113713,
-        "pitch": -0.05299449736392603,
+        "yaw": -0.2786003440137623,
+        "pitch": 0,
         "fov": 1.3116418928398474
       },
       "linkHotspots": [
@@ -62,8 +62,8 @@ var APP_DATA = {
       ],
       "faceSize": 1488,
       "initialViewParameters": {
-        "yaw": -1.7105072088038558,
-        "pitch": 0.10718074923490661,
+        "yaw": -1.6557761179692214,
+        "pitch": 0,
         "fov": 1.3116418928398474
       },
       "linkHotspots": [
