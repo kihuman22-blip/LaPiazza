@@ -389,7 +389,7 @@
   // Display the initial scene.
   switchScene(scenes[0]);
 
- // --- Verbesserter Szenen-Wechsler Start ---
+ // --- Verbesserter Szenen-Wechsler (9 Sekunden) Start ---
 var sceneTimeout;
 
 function startSceneTimer() {
@@ -412,7 +412,7 @@ function startSceneTimer() {
     
     // Timer für die nächste Runde starten
     startSceneTimer();
-  }, 6000); 
+  }, 9000); // 9000ms = 9 Sekunden
 }
 
 // Timer neu starten bei Interaktion
